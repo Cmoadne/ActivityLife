@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.cmoadne.a3activitylifecycletest.MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!--@+id 定义一个id 宽度和父元素一样  高度包含内容就行-->
+    <Button
+        android:id="@+id/button_1_start_normal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
-</RelativeLayout>
+        android:text="Start NormalActivity"/>
+    <Button
+        android:id="@+id/button_1_start_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start DialogActivity"
+        />
+
+</LinearLayout>
